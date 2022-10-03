@@ -1,16 +1,32 @@
 ﻿
 Console.WriteLine("Введите число a");
-int 6a = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число b");
 int b = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число с");
+int c = int.Parse(Console.ReadLine());
 int max =0;
 if (a>b)
 {
-    max = a;
+    if (a>c)
+    {
+        max = a; 
+    }
+    else
+    {
+        max = c;
+    }
 }
 else
 {
-    max = b;
+    if (b>c)
+    {
+        max = b;
+    }
+    else
+    {
+        max = c;
+    }
 }
 Console.Write("Максимальное число ");
 Console.WriteLine(max);

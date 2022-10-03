@@ -1,10 +1,10 @@
 Console.WriteLine("Введите число a");
 int a = int.Parse(Console.ReadLine());
-if (a%2==1)
+if (a%2==0)
 {
-    Console.WriteLine("Число нечетное");
+    Console.WriteLine("Число четное");
 }
 else
 {
-    Console.WriteLine("Число четное");
+    Console.WriteLine("Число нечетное");
 }

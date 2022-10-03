@@ -1,11 +1,15 @@
-﻿
-Console.WriteLine("Введите число a");
-int a = int.Parse(Console.ReadLine());
-if (a%2==1)
+﻿Console.WriteLine("Введите число N");
+int n = int.Parse(Console.ReadLine());
+int i = 1;
+while (i <= n)
 {
-    Console.WriteLine("Число нечетное");
-}
-else
-{
-    Console.WriteLine("Число четное");
+    if (i%2!=1)
+    {
+        Console.Write(i);
+    }
+    else
+    {    
+        Console.Write(" ");
+    }
+    i++;
 }
